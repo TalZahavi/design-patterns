@@ -5,5 +5,8 @@ public class SingletonMain {
     public static void main(String[] args) {
         SimpleSingleton instance = SimpleSingleton.getInstance();
         instance.doSomething();
+
+        DoubleCheckSingleton instance2 = DoubleCheckSingleton.getInstance();
+        instance2.doSomething();
     }
 }
