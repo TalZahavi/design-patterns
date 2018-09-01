@@ -8,5 +8,11 @@ public class SingletonMain {
 
         DoubleCheckSingleton instance2 = DoubleCheckSingleton.getInstance();
         instance2.doSomething();
+
+        EarlyInitSingleton instance3 = EarlyInitSingleton.getInstance();
+        instance3.doSomething();
+
+        EnumSingleton instance4 = EnumSingleton.instance;
+        instance4.doSomething();
     }
 }
